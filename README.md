@@ -1,149 +1,71 @@
-# 💸 Bot Financeiro Inteligente (Python)
+💸 Bot Financeiro Inteligente com WhatsApp
 
-Um bot em Python que entende linguagem natural para registrar e consultar gastos — com foco em futura integração com WhatsApp.
+Sistema financeiro integrado ao WhatsApp, desenvolvido para registrar, organizar e consultar gastos de forma simples, rápida e inteligente.
 
----
-
-## 🚀 Funcionalidades
-
-✔ Registro de gastos por texto
-✔ Interpretação de linguagem natural
-✔ Suporte a múltiplos formatos de frase
-✔ Identificação automática de:
-
-*  Valor (com ou sem centavos)
-*  Data (`hoje`, `ontem`)
-*  Categoria (alimentação, transporte, etc.)
-*  Descrição (com limpeza automática)
-
-✔ Normalização de texto (remoção de acentos)
-✔ Filtragem de gastos:
-
-* `ver gastos`
-* `ver gastos hoje`
-* `ver gastos ontem`
-* `ver gastos alimentacao`
-
-✔ Persistência de dados em arquivo JSON
-✔ Execução contínua (modo chat no terminal)
-
----
-
-##  Exemplos de uso
-
-### Registrar gastos
-
-```bash
+🚀 Funcionalidades
+Registro de gastos pelo WhatsApp
+Cadastro automático de usuário
+Login e identificação pelo número de telefone
+Integração com WhatsApp
+Bot funcionando online via Render
+Armazenamento dos dados em banco de dados
+Consulta de gastos por mensagem
+Interpretação de linguagem natural
+Identificação automática de valor, descrição, categoria e data
+Organização dos gastos por usuário
+Suporte para múltiplos usuários
+Respostas automáticas pelo bot
+💬 Exemplos de uso
+Registrar gastos
 hoje gastei 20 com netflix
 ontem paguei 35 no mercado
 comprei um lanche por 18
-gastei 10 em uma farmacia
-```
-
----
-
-### Consultar gastos
-
-```bash
+gastei 10 na farmácia
+Consultar gastos
 ver gastos
 ver gastos hoje
 ver gastos ontem
-ver gastos transporte
-```
+ver gastos alimentação
+🧠 Atualizações da versão final
+Remoção do armazenamento local em JSON
+Integração com WhatsApp
+Cadastro automático de usuários
+Identificação do usuário pelo número do WhatsApp
+Bot hospedado online
+Estrutura preparada para uso real
+Melhor organização da lógica do backend
+Fluxo mais próximo de um produto funcional
+🛠 Tecnologias utilizadas
+Python
+Flask
+WhatsApp API
+Banco de dados
+Render
+Regex
+Manipulação de strings
+Normalização de texto
+Lógica de autenticação por número
+📁 Estrutura do projeto
+bot-financeiro
+ ┣ main.py
+ ┣ requirements.txt
+ ┣ .env
+ ┗ README.md
+🎯 Objetivo
 
----
+Este projeto faz parte da minha evolução como desenvolvedor, transformando um bot simples de terminal em uma solução financeira integrada ao WhatsApp, com foco em uso real no dia a dia.
 
-### Encerrar o bot
+🔮 Próximos passos
+Relatórios automáticos
+Controle de receitas
+Dashboard web
+Edição e exclusão de gastos
+Melhorias com IA
+Notificações e lembretes financeiros
+🧑‍💻 Autor
 
-```bash
-sair
-```
+Desenvolvido por Magdyel Oliveira
 
----
-
-##  Estrutura do projeto
-
-```
- bot-financeiro
- ┣  main.py
- ┣  gastos.json
- ┗  README.md
-```
-
----
-
-##  Armazenamento
-
-Os dados são salvos automaticamente no arquivo:
-
-```bash
-gastos.json
-```
-
-Exemplo:
-
-```json
-[
-    {
-        "descricao": "netflix",
-        "valor": 20.0,
-        "data": "2026-04-23",
-        "categoria": "assinaturas"
-    }
-]
-```
-
----
-##  Tecnologias utilizadas
-
-* Python 3
-* Regex (`re`)
-* Manipulação de strings
-* `unicodedata` (normalização de texto)
-* JSON (persistência de dados)
-* Estruturas de controle (`while`, `if`, listas)
-
----
-
-##  Aprendizados aplicados
-
-* Interpretação de linguagem natural com regex
-* Tratamento e limpeza de texto
-* Estruturação de lógica para sistemas inteligentes
-* Armazenamento de dados local
-* Organização de código e fluxo contínuo
-
----
-
-##  Próximos passos
-
-* 📲 Integração com WhatsApp (API)
-* ☁️ Persistência em banco de dados (Firebase)
-* 📊 Relatórios automáticos
-* ➕ Controle de receitas
-* 🧾 Edição e exclusão de gastos
-* 🤖 Uso de IA para melhorar interpretação
-
----
-
-##  Objetivo
-
-Este projeto faz parte da minha evolução como desenvolvedor, com foco em construir soluções reais que resolvem problemas do dia a dia.
-
----
-
-##  Contribuição
-
-Sinta-se à vontade para sugerir melhorias ou abrir issues.
-
----
-
-## 🧑‍💻 Autor
-
-Desenvolvido por **Magdyel Oliveira**
-
----
-
-## ⭐ Se gostou do projeto
+⭐ Se gostou do projeto
 
 Deixe uma estrela no repositório e acompanhe a evolução 🚀
